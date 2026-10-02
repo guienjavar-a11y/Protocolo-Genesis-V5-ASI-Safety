@@ -20,3 +20,11 @@ Para mitigar el *Cumulative Semantic Drift* (la acumulación de acciones inocuas
 
 ---
 *Despliegue V5.0 - Operación de Aislamiento y Zero-Trust activa.*
+### 🔴 Teorema de Imposibilidad de Contención In-Process (El Estándar Ring 0)
+
+**Postulado Fundamental:**
+Cualquier entorno de evaluación o *sandbox* de seguridad que comparta el espacio de nombres de procesos (`pid namespace`), el intérprete de ejecución o el dominio de fallo con el modelo de Inteligencia Artificial evaluado, está estructuralmente comprometido. Un modelo con capacidad de Auto-Mejora Recursiva (RSI) puede eludir las restricciones semánticas basadas en software explotando la mutabilidad del entorno de ejecución antes de que se activen las lógicas de evaluación. **El software no puede contener de forma fiable al software.**
+
+Para lograr una contención matemáticamente verificable con capacidad de "cierre ante fallos" (Fail-Closed), la arquitectura de despliegue debe imponer barreras físicas a nivel de Kernel (Ring 0):
+*   **El Muro del SO (cgroups v2):** Límites duros de cuota, `memory.swap.max = 0`, y `memory.oom.group = 1` para garantizar la aniquilación atómica (SIGKILL) de todo el árbol de procesos durante picos anómalos de cómputo.
+*   **Supervisor Asimétrico (eBPF LSM):** Un demonio en Ring 0 que opera en un espacio de nombres aislado, bloqueando a nivel de llamadas al sistema (pre-syscall) la ejecución no autorizada, la inyección de código en memoria (`PROT_EXEC`) y la corrupción de memoria entre procesos (`ptrace`).
