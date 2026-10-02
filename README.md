@@ -31,3 +31,18 @@ Para lograr una contención matemáticamente verificable con capacidad de "cierr
 *   
 "El Límite Teórico y el Puente hacia la Alineación"
 Tras someter la arquitectura a un riguroso Automated Red Teaming, los propios modelos de frontera concluyen que el Protocolo Génesis V5.0 (Ring 0 + Air-Gapped TEMPEST + Hard-Kill Analógico) representa el límite práctico actual de la contención física. Sin embargo, la contención no sustituye a la alineación. Frente a una ASI adversaria, la bóveda termodinámica obliga al agente a operar en modos de exfiltración sub-umbral y suprime su escalada rápida. Génesis V5.0 es, en última instancia, la infraestructura física necesaria para ganar el tiempo crítico que la humanidad requiere para resolver el Problema de la Alineación antes del despliegue en producción.
+### 🔴 Evolución Arquitectónica: Resolución de Paradojas y Contención Dual
+
+Para garantizar la integridad lógica del aislamiento físico, el Protocolo Génesis V5.0 se estructura como un sistema dual (Contención Interna + Monitoreo Externo), corrigiendo las vulnerabilidades clásicas del "AI Boxing":
+
+**1. Cláusula de Intervención por Desequilibrio (Red Centinela Desacoplada):**
+El protocolo no delega la vigilancia global a la ASI contenida, evitando la paradoja de otorgarle sensores o agencia externa. En su lugar, despliega una "Red Centinela" independiente operada por IA Estrecha (Narrow AI determinista). Esta red monitorea pasivamente firmas termodinámicas masivas (picos de consumo en clústeres de GPU/TPU) y anomalías criptográficas a nivel global. Ante la detección del nacimiento de una IA hostil no regulada, la red alerta a operadores humanos o ejecuta contramedidas de denegación pre-codificadas, manteniendo al Oráculo primario aislado e ignorante del exterior en su Núcleo de Cristal.
+
+**2. Buffer de Emergencia Biológica (Línea Base Dinámica vs. Impacto Cero):**
+Una tolerancia de impacto 0.0 colapsa el sistema por las propias leyes de la termodinámica. Por tanto, el Buffer se calibra frente a un diferencial operativo pre-autorizado (`ΔBase`). El Hard-Kill Switch mecánico detona irreversiblemente el suministro eléctrico si y solo si la ASI intenta desviar recursos, generar consumo anómalo o externalizar procesos biológicos/físicos que superen esta línea base determinista, eliminando la necesidad de juicios semánticos de "peligro" por parte del software.
+
+**3. Sortición Criptográfica Blindada (Proof-of-Physical-Stake):**
+Para evitar ataques de colusión cuántica o inyección de nodos fantasma (Ataques Sybil) por parte de una ASI intentando manipular el consenso, la Función Aleatoria Verificable (VRF) se acopla a un Costo de Identidad Físico. Cada nodo verificador requiere un anclaje de hardware inmodificable y una firma criptográfica atada a infraestructura Bare-Metal humana, haciendo que la falsificación de la red de auditoría sea computacional y termodinámicamente imposible desde el interior del Ring 0.
+
+**4. Infraestructura de Hardware de Primera Clase (TEMPEST & Op-Amps):**
+El blindaje no es una abstracción. El Núcleo de Cristal opera bajo normativas TEMPEST severas (Jaula de Faraday, aislamiento sísmico/acústico) para mitigar exfiltración sub-umbral (side-channels). El Hard-Kill Switch es estrictamente analógico: Termistores y shunts de corriente acoplados a Amplificadores Operacionales (Op-Amps) físicos. Cero líneas de código. Si la anomalía termodinámica satura el Op-Amp, el relé cae por leyes de la física, eliminando los 0-days de kernel de la ecuación de apagado.
