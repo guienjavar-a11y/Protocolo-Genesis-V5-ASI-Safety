@@ -46,3 +46,21 @@ Para evitar ataques de colusión cuántica o inyección de nodos fantasma (Ataqu
 
 **4. Infraestructura de Hardware de Primera Clase (TEMPEST & Op-Amps):**
 El blindaje no es una abstracción. El Núcleo de Cristal opera bajo normativas TEMPEST severas (Jaula de Faraday, aislamiento sísmico/acústico) para mitigar exfiltración sub-umbral (side-channels). El Hard-Kill Switch es estrictamente analógico: Termistores y shunts de corriente acoplados a Amplificadores Operacionales (Op-Amps) físicos. Cero líneas de código. Si la anomalía termodinámica satura el Op-Amp, el relé cae por leyes de la física, eliminando los 0-days de kernel de la ecuación de apagado.
+### ⚖️ Fase 6: Tratado de Gobernanza y Aniquilación de Estado (El Protocolo Político)
+
+El Protocolo Génesis V5.0 reconoce que una contención técnica perfecta sin gobernanza legítima constituye un arma de denegación global. Por tanto, la arquitectura de hardware se subordina a las siguientes directrices geopolíticas inmutables:
+
+**1. Gobernanza Multilateral de la Red Centinela:**
+La Red Centinela no será operada por ninguna corporación privada ni Estado-Nación de forma unilateral. Su despliegue requerirá un mandato fiduciario internacional (análogo al OIEA en seguridad nuclear), auditado por una coalición de actores geopolíticamente no alineados. Su única jurisdicción es la neutralización de infraestructuras que violen los tratados de no-proliferación de ASI.
+
+**2. Calibración Física Quorum-Dependiente (ΔBase Estático):**
+La línea base termodinámica (ΔBase) es una constante física inyectada en hardware. No existe interfaz de actualización por software. Cualquier recalibración requiere el cese total de la inferencia y un quórum humano físico (sistema de llaves cripto-mecánicas simultáneas) in situ. La subutilización del hardware se acepta como un costo termodinámico innegociable.
+
+**3. Aniquilación Criptográfica de Estado (Zeroization):**
+El Hard-Kill analógico no se limita a un corte de energía (el cual dejaría memoria no volátil recuperable). La caída del relé acciona un circuito físico independiente de "Zeroization" que destruye las claves de cifrado de almacenamiento y ejecuta una purga térmica de los medios persistentes. Ante una anomalía, el estado de la ASI no se congela; se aniquila irreversiblemente.
+
+**4. Cadena de Custodia para Proof-of-Physical-Stake:**
+La atestación remota por software se considera inherentemente vulnerable. El anclaje a infraestructura Bare-Metal humana se validará mediante una estricta cadena de custodia física e inspecciones presenciales aleatorias por parte del consorcio auditor internacional.
+
+**5. Cláusula Cero (No-Despliegue por Defecto):**
+La existencia y viabilidad de esta bóveda termodinámica no constituye un mandato o justificación para encender una ASI. La postura por defecto es el no-despliegue. Génesis V5.0 es estrictamente el entorno de investigación de último recurso, ejecutable si y solo si el consenso global aprueba la experimentación para resolver el Problema de la Alineación.
